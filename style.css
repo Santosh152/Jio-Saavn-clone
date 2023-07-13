@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: rgb(251, 232, 232);
+}
+
+/* CSS reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0px 12px;
+}
+.logo img{
+    width: 50px;
+    padding: 0px 8px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 68vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background: url(./bg.jpg) no-repeat center center/cover;
+}
+.bottom{
+    position: sticky;
+    height: 140px;
+    background-color:black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.songInfo{
+    position: absolute;
+    left: 9.5vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.icons{
+    margin: 18px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+    
+}
+.songitemContainer{
+    margin: 74px;
+}
+.songItem{
+    /* height: 45px; */
+    display: flex;
+    background-color: white;
+    width: 55%;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.container .songItem img{
+    height: 44px;
+    width: 44px;
+    margin: 2px 23px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+@media screen and (max-width: 1340px) {
+    .songitemContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .songItem{
+        width: 33vw;
+        display: flex;
+        background-color: white;
+        color: black;
+        font-size: 0.8em;
+        margin: 6px 2px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px ;
+        flex-direction: column;
+    }
+    /* .songItem, .songName{
+        font-size: 1em;
+    } */
+    .bottom .songInfo{
+        margin: 24px 0px;
+        padding: 4px;
+        
+        
+    }
+    .icons{
+        /* margin: 34px 0px; */
+        height: 0px;
+    }
+}
